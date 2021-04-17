@@ -1,0 +1,56 @@
+---
+- name: Include vars containing all packages
+  include_vars:
+    dir: 'vars'
+    extensions: ['yml']
+- name: set vars
+  ansible.builtin.set_fact:
+    installs_url: []
+    dest_installs: 'C:\Temp\'
+    executable_packages: []
+    downloaded_packages: []
+- name: print versions of user specified packages from vars.json
+  debug: 
+    msg: "{{ versions }}"
+- name: Iterate over packages
+  ansible.builtin.set_fact:
+    installs_url: "{{ installs_url + [item.value] }}" # create a list of the matching urls
+  when:
+    - item.key in versions
+  loop: "{{ packages | dict2items }}"
+- name: create temporary folder to download files to
+  win_file:
+    path: C:\Temp\
+    state: directory
+- name: download selected packages
+  win_get_url: 
+    url: "{{ item[0] }}"
+    dest: C:\Temp\
+    checksum: "{{ item[1] }}" #fails if not matching
+    checksum_algorithm: "{{ item[2] }}"
+  register: downloads_output
+  when: 
+    - installs_url != ""
+  loop: "{{ installs_url }}"
+- name: print downloads_output #debug
+  debug: 
+    msg: "{{ downloads_output }}"
+- name: get executable packages.
+  win_find: 
+    paths: C:\Temp\
+    patterns: [ '*.exe', '*.msi' ] #can modify if certain of extensions
+  register: exec_file_names
+- name: make a list of executable packages filenames # exec_file_names contains all attribs of files found including filename
+  ansible.builtin.set_fact:
+    executable_packages: "{{ executable_packages + [item.filename] }}"
+  loop: "{{ exec_file_names.files }}" 
+- name: install executable packages
+  win_shell: 
+   Start-Process -FilePath {{ dest_installs + item }} -ArgumentList "/q /norestart" -Wait
+  when:
+    - executable_packages != ""
+  loop: "{{ executable_packages }}"
+- name: remove/cleanup folder containing packages
+  win_file:
+    path: C:\Temp\
+    state: absent

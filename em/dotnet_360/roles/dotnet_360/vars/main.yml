@@ -1,0 +1,32 @@
+---
+  ## Refs: 
+  # - https://dotnet.microsoft.com/download/dotnet-framework
+  #https://support.microsoft.com/en-us/topic/microsoft-net-framework-4-7-2-web-installer-for-windows-dda5cddc-b85e-545d-8d4a-d213349b7775
+  # - https://dotnet.microsoft.com/download/dotnet-core/
+  # - https://versionsof.net/framework/
+  # - https://github.com/dotnet/core/blob/master/release-notes/download-archives/1.0.5-download.md - serverhosting1.0.5_1.1.2
+packages:
+  # dotnet_core_sdk
+  dotnetcoresdk_2.1.504: [https://download.visualstudio.microsoft.com/download/pr/1dcd5e24-25da-40dc-9996-4db675c1c22d/e154ee2beeb1eec4e9b049a8d3740c80/dotnet-sdk-2.1.504-win-x64.exe, AC2C45DC10428EB888D80B15E1CF8B0FF2E76980038AF312C76E8929501A44B0631A9C3C15F098F288C0BE4CFD19343EDE83DEF5CDA6B16985B23DE14B6F4C8C, SHA512]
+# dotnet_core_sdk newer LTS
+  #dotnetcoresdk_2.1.520: [https://download.visualstudio.microsoft.com/download/pr/f519b394-990e-4b86-a252-27a76c69248d/41c2c92d915885bbfe62c0bcce9c5c6d/dotnet-sdk-2.1.520-win-x64.exe, 2ec5a0b6b7d9347f4d3a30f8983b084097198d0283e87ab6274064a6d4171a192edcbf296bb795f5c4d3f3f445a8aed9194b31d5f163c8528504f401a588ba25, SHA512]
+  dotnetcoresdk_3.1.111: [https://download.visualstudio.microsoft.com/download/pr/d5c614fa-73fe-43f1-9a80-56af8385cd30/f5730367b987c5ec3042af6eb7c8e18d/dotnet-sdk-3.1.111-win-x64.exe, feea92635bd99323ce1c4c3cb7e45e7fce936745690ae183130064b59e9b40b5be2f111bab6344a8b265193a8ab37184e0c4d6dc3877a3b229f27dcf3a599744, SHA512]
+# dotnet_core_runtime - Out of support versions
+  dotnetcoreruntime_1.1.10: [https://download.visualstudio.microsoft.com/download/pr/f2c70fc3-d08f-41d0-80cd-851530acb391/6f5c6c2715f92c4aa3c45616c0419125/dotnet-win-x64.1.1.10.exe, 0653d989fd88ec8d94e66825c70134476f405da4e00fa850b42a597fd8faeb72fd389f947444d7bdddf30e600a3d7398f607aaee2e63047c25d620f46f2d39db, SHA512]
+  dotnetcoreruntime_1.1.11: [https://download.visualstudio.microsoft.com/download/pr/dd13fbf3-66c4-4255-b8da-ad75027b74eb/eced2eb2d3a3ccdd71a11a9099d7428d/dotnet-win-x64.1.1.11.exe, F62E92C07A663449E96F86684D3018EB4E96DB0F24487DB41726DA079845F2D34B12C69D18FCDBFC2F56C27870FCF6742143C9DD12043F861BBAA9E4741184C7, SHA512]
+# dotnet_core_runtime newer LTS
+  dotnetcoreruntime_2.1.24: [https://download.visualstudio.microsoft.com/download/pr/d45e9c83-d873-4b27-991d-1989eb3a9c1e/ec407bf9ed35086f150e4c6f3f635e8c/dotnet-runtime-2.1.24-win-x64.exe, 7dfbcc5e3edf4bf81ad370f6c60680d14ac614920f7e4e54484a143848c3f0b647e3ca2f3ddcfdc33c0ef877f2312708f2b9a94491030b9e777e4354b063569c, SHA512]
+  dotnetcoreruntime_3.1.11: [https://download.visualstudio.microsoft.com/download/pr/15885ffa-ab48-4ee1-99a2-4f20e71ce956/06267d73270ed92fb5a8c873ef56045d/dotnet-runtime-3.1.11-win-x64.exe, 3c1acd621183f21f61b9b0b162a90b23963c056b2d0f5c70c636bc1646850666d4be04b757753f2e0d8161b61026b46ee5b1b4d8d09febc2640f40c8d76a631d, SHA512]
+# dotnet_core_runtime windowshosting
+  dotnetcoreruntime_WindowsHosting_1.0.5_1.1.2: [https://download.microsoft.com/download/C/3/2/C32D45DC-6057-4E09-8FE2-25416934BDBB/DotNetCore.1.0.5_1.1.2-WindowsHosting.exe, f7b104ff3779c8a8e1e0e28c3620d2ff4f58411ff378d14be6dbc510f4a798513be1dce0b847481c665aed00a4a6d14ac16a8909a6e576aea8e1179179a2862b, SHA512]
+  dotnetcoreruntime_WindowsHosting_2.1.8: [https://download.visualstudio.microsoft.com/download/pr/c2b2968d-022d-4889-afd0-b02010813c94/bd315e931f55eecfdaea258cf3dee48e/dotnet-hosting-2.1.8-win.exe, E7F851CB8B75B71483AA4C3EB98EE272A3839B21F8AEF1EA0CBA9FBA5478373F037BD9BF25DE1FCA74C0A2EE792B894CD313D0F09DD68D6964FBBDC4F0A6B10C, SHA512]
+  dotnetcoreruntime_WindowsHosting_2.2.7: [https://download.visualstudio.microsoft.com/download/pr/51c29196-43b3-47d6-a393-d0df24081ac1/8b8d720b3cd63d88a2fd69115ab713c5/dotnet-hosting-2.2.7-win.exe, 137E2DF801EFE520A774B793799A532310BB42C3C13FAA5B5F1E048C4252896DBD776FA55F25CB30E2FF57DAB8492BE37B41A9952EAEEA968E2A449261DE5EE3, SHA512]
+# dotnet framework -     #downloaads file as fwlink
+  dotnetframework_4.7: [https://download.microsoft.com/download/A/E/A/AEAE0F3F-96E9-4711-AADA-5E35EF902306/NDP47-KB3186500-Web.exe, 744c0814ba2a92d130bab55eed0b72cf2ce7b762115e374a2a3fa2d16d9e16170c370c4fd74d76264bb4a6ff4188ab369b331bc43bd8343fdf812e1c0107df07, SHA512]
+  #dotnetframework_4.7.1: [https://download.microsoft.com/download/8/E/2/8E2BDDE7-F06E-44CC-A145-56C6B9BBE5DD/NDP471-KB4033344-Web.exe, 9ca9e00bb6502a6ab481849b11c11526a12e5a1f436f929381d038e370c991e89a7bbcddc62da436accaeaa1d292b6453fdea964d645d08299a64aa603f8bc69, SHA512]
+  dotnetframework_4.7.2: [https://download.microsoft.com/download/0/5/C/05C1EC0E-D5EE-463B-BFE3-9311376A6809/NDP472-KB4054531-Web.exe, 37006954e3afe07fb02d24894cc34794618b78c27a1b514818985b6cc1fa3e896ed99ba2e4aac3f6469d263819bd94ee70e7113946c51ba83c93b74826fc8fa8, SHA512]
+  dotnetframework_offline_4.7.2: [https://download.microsoft.com/download/6/E/4/6E48E8AB-DC00-419E-9704-06DD46E5F81D/NDP472-KB4054530-x86-x64-AllOS-ENU.exe, 36f295ed19a5bd5c5f05803ba26efd17d419abc7a791312ad011b63a4402492529aed0fb4d45ff1f74381079a310b33649c9c56c36e815b12e79ecd671897489, SHA512]
+  #dotnetframework_4.8: [https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/1f81f3962f75eff5d83a60abd3a3ec7b/ndp48-web.exe, e18e3db30a0ab2b51f34a9b7ebcec0fd7b015f74b4525643c170fde73ee94ba4092e3a82c98bcae4aebf48009ba8b6e7fa60b89ab917d8f28e74e84db9d8cf21, SHA512]
+# dotnet framework devpack
+  dotnetframework_devpack_4.7: [https://download.microsoft.com/download/A/1/D/A1D07600-6915-4CB8-A931-9A980EF47BB7/NDP47-DevPack-KB3186612-ENU.exe, d1b38096519b2f732d5e83c09e0ce3495914c514ad4835625ac2ada61bc7b3f940a7a2c28c92f51341ae897a44b054093c8211827cebecfbe86a9788cdc59e06, SHA512]
+  dotnetframework_devpack_4.7.2: [https://download.microsoft.com/download/3/B/F/3BFB9C35-405D-45DF-BDAF-0EB57D047888/NDP472-DevPack-ENU.exe, e1928fe7ffc091659eca7a3714fb6290dc1b82d1a4712c821df0a62aa681635b67131e2d48fa92f0e6e294480189f00202e9986f8ae5eff62ea9016ebfd85b38, SHA512]

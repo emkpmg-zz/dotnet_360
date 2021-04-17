@@ -1,0 +1,4 @@
+*.pem
+*.sh
+*.DS_Store
+test*
