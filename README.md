@@ -6,6 +6,9 @@ dotnet_360 ansible role
 
     dotnet_360 ansible role is a one in all paackage for installing most versions of Microsoft .NET. (core SDK, .NET core runtime and .NET framework. Includes devpack, windows devpack, windowshosting and other variations). Role can be added in playbook with specific versions to install.
 
+Installation
+------------
+ansible-galaxy collection install piandt.dotnet360
 
 Role Variables
 --------------
@@ -23,8 +26,9 @@ An example of how to use your role (for instance, with variables passed in as pa
          	version:
 
 
-Requirements
+Package site
 ------------
+Link: https://galaxy.ansible.com/piandt/dotnet360
 
 Dependencies
 ------------
