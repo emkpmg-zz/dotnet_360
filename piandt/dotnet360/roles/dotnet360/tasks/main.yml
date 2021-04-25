@@ -14,7 +14,7 @@
     msg: "{{ versions }}"
 - name: Iterate over packages
   ansible.builtin.set_fact:
-    installs_url: "{{ installs_url + [item.value] }}" # create a list of the matching urls
+    installs_url: "{{ installs_url + [item.value] }}"
   when:
     - item.key in versions
   loop: "{{ packages | dict2items }}"

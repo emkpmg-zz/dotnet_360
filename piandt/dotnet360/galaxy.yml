@@ -2,10 +2,10 @@
 # The namespace of the collection. This can be a company/brand/organization or product namespace under which all
 # content lives. May only contain alphanumeric lowercase characters and underscores. Namespaces cannot start with
 # underscores or numbers and cannot contain consecutive underscores
-namespace: em
+namespace: piandt
 
 # The name of the collection. Has the same character restrictions as 'namespace'
-name: dotnet_360
+name: dotnet360
 
 # The version of the collection. Must be compatible with semantic versioning
 version: 1.0.0
@@ -15,12 +15,13 @@ readme: README.md
 
 # A list of the collection's content authors. Can be just the name or in the format 'Full Name <email> (url)
 # @nicks:irc/im.site#channel'
-authors: E|M
+authors:
+- your name <example@domain.com>
 
 
 ### OPTIONAL but strongly recommended
 # A short summary description of the collection
-description: dotnet_360 install any version of Microsoft .NET core SDK, .NET core runtime and .NET framework on Windows OS. (Includes devpack, windows devpack, windowshosting and other variations)
+description: your collection description
 
 # Either a single license or a list of licenses for content inside of a collection. Ansible Galaxy currently only
 # accepts L(SPDX,https://spdx.org/licenses/) licenses. This key is mutually exclusive with 'license_file'
@@ -42,16 +43,16 @@ tags: []
 dependencies: {}
 
 # The URL of the originating SCM repository
-repository: https://github.com/ewuramaminka/open_source_repositories.git
+repository: http://example.com/repository
 
 # The URL to any online docs
-documentation: https://github.com/ewuramaminka/open_source_repositories.git
+documentation: http://docs.example.com
 
 # The URL to the homepage of the collection/project
-homepage: https://github.com/ewuramaminka/open_source_repositories.git
+homepage: http://example.com
 
 # The URL to the collection issue tracker
-issues: https://github.com/ewuramaminka/open_source_repositories/issues
+issues: http://example.com/issue/tracker
 
 # A list of file glob-like patterns used to filter any files or directories that should not be included in the build
 # artifact. A pattern is matched from the relative path of the file or directory of the collection directory. This

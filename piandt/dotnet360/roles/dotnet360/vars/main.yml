@@ -1,10 +1,4 @@
 ---
-  ## Refs: 
-  # - https://dotnet.microsoft.com/download/dotnet-framework
-  #https://support.microsoft.com/en-us/topic/microsoft-net-framework-4-7-2-web-installer-for-windows-dda5cddc-b85e-545d-8d4a-d213349b7775
-  # - https://dotnet.microsoft.com/download/dotnet-core/
-  # - https://versionsof.net/framework/
-  # - https://github.com/dotnet/core/blob/master/release-notes/download-archives/1.0.5-download.md - serverhosting1.0.5_1.1.2
 packages:
   # dotnet_core_sdk
   dotnetcoresdk_2.1.504: [https://download.visualstudio.microsoft.com/download/pr/1dcd5e24-25da-40dc-9996-4db675c1c22d/e154ee2beeb1eec4e9b049a8d3740c80/dotnet-sdk-2.1.504-win-x64.exe, AC2C45DC10428EB888D80B15E1CF8B0FF2E76980038AF312C76E8929501A44B0631A9C3C15F098F288C0BE4CFD19343EDE83DEF5CDA6B16985B23DE14B6F4C8C, SHA512]
